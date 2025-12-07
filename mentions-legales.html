@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales - IntolerScan</title>
+    <style>
+        :root {
+            --sage: #2C5F4D;
+            --ochre: #8B6439;
+            --warm-beige: #E8DCC8;
+            --cream: #F5F0E8;
+            --terracotta: #C17855;
+            --dark-text: #2D2D2D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background-color: var(--cream);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--sage);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        section {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--sage);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--warm-beige);
+        }
+
+        h3 {
+            color: var(--ochre);
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        p {
+            margin-bottom: 0.8rem;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--warm-beige);
+        }
+
+        th {
+            background-color: var(--cream);
+            color: var(--sage);
+            font-weight: 600;
+        }
+
+        .warning-box {
+            background-color: #FFF3E0;
+            border-left: 4px solid var(--terracotta);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box strong {
+            color: var(--terracotta);
+        }
+
+        .contact-box {
+            background-color: var(--cream);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        a {
+            color: var(--sage);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        .placeholder {
+            background-color: #FFFDE7;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            table {
+                font-size: 0.8rem;
+            }
+
+            th, td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mentions Légales</h1>
+        <p>Application IntolerScan</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Éditeur de l'application</h2>
+            <p>L'application mobile <strong>IntolerScan</strong> est éditée par :</p>
+            <div class="contact-box">
+                <p><strong>Sylvain Franchot</strong></p>
+                <p>Auto-entrepreneur</p>
+                <p>SIRET : <span class="placeholder">[EN ATTENTE D'IMMATRICULATION]</span></p>
+                <p>France</p>
+                <br>
+                <p>Email : <a href="mailto:support@intolerscan.com">support@intolerscan.com</a></p>
+                <p>Email protection des données : <a href="mailto:privacy@intolerscan.com">privacy@intolerscan.com</a></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Directeur de la publication</h2>
+            <p><strong>Sylvain Franchot</strong></p>
+            <p>Email : <a href="mailto:support@intolerscan.com">support@intolerscan.com</a></p>
+        </section>
+
+        <section>
+            <h2>3. Hébergement des données</h2>
+            <p>Les données de l'application sont hébergées par :</p>
+            <div class="contact-box">
+                <p><strong>Google Cloud Platform (Firebase)</strong></p>
+                <p>Google Ireland Limited</p>
+                <p>Gordon House, Barrow Street</p>
+                <p>Dublin 4, Irlande</p>
+            </div>
+            <p>Les serveurs utilisés sont situés dans l'Union Européenne (région <code>europe-west1</code>).</p>
+        </section>
+
+        <section>
+            <h2>4. Propriété intellectuelle</h2>
+
+            <h3>4.1 Application et contenus</h3>
+            <p>L'ensemble de l'application IntolerScan, incluant le code source, l'interface utilisateur, les graphismes, les textes et les algorithmes d'analyse, est protégé par le droit d'auteur et reste la propriété exclusive de l'éditeur.</p>
+
+            <h3>4.2 Marques</h3>
+            <p><strong>IntolerScan</strong> est une marque de l'éditeur. Toute reproduction ou utilisation non autorisée est interdite.</p>
+
+            <h3>4.3 Données utilisateur</h3>
+            <p>Les données saisies par l'utilisateur (repas, symptômes, notes) restent sa propriété exclusive. L'éditeur n'acquiert aucun droit sur ces données au-delà de ce qui est nécessaire au fonctionnement du service.</p>
+        </section>
+
+        <section>
+            <h2>5. Services tiers intégrés</h2>
+            <p>L'application utilise les services tiers suivants :</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Fournisseur</th>
+                        <th>Finalité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Firebase Authentication</td>
+                        <td>Google Ireland Ltd</td>
+                        <td>Authentification des utilisateurs</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Firestore</td>
+                        <td>Google Ireland Ltd</td>
+                        <td>Stockage des données utilisateur</td>
+                    </tr>
+                    <tr>
+                        <td>Firebase Analytics</td>
+                        <td>Google Ireland Ltd</td>
+                        <td>Statistiques d'utilisation anonymisées</td>
+                    </tr>
+                    <tr>
+                        <td>RevenueCat</td>
+                        <td>RevenueCat Inc. (USA)</td>
+                        <td>Gestion des abonnements Premium</td>
+                    </tr>
+                    <tr>
+                        <td>Google Gemini AI</td>
+                        <td>Google Ireland Ltd</td>
+                        <td>Analyse d'images de repas</td>
+                    </tr>
+                    <tr>
+                        <td>Open Food Facts</td>
+                        <td>Association Open Food Facts</td>
+                        <td>Base de données produits alimentaires</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>6. Avertissement important</h2>
+            <div class="warning-box">
+                <p><strong>IMPORTANT</strong> : IntolerScan est un outil de suivi personnel et ne constitue en aucun cas :</p>
+                <ul>
+                    <li>Un dispositif médical au sens du Règlement (UE) 2017/745</li>
+                    <li>Un outil de diagnostic médical</li>
+                    <li>Un substitut à une consultation médicale</li>
+                </ul>
+                <p>Les corrélations et analyses présentées sont fournies à titre indicatif uniquement. <strong>Consultez toujours un professionnel de santé</strong> (médecin, allergologue, diététicien) pour tout problème de santé ou suspicion d'intolérance alimentaire.</p>
+            </div>
+            <p>L'éditeur décline toute responsabilité en cas d'utilisation des informations fournies par l'application à des fins de diagnostic ou de traitement médical.</p>
+        </section>
+
+        <section>
+            <h2>7. Limitation de responsabilité</h2>
+
+            <h3>7.1 Disponibilité du service</h3>
+            <p>L'éditeur s'efforce d'assurer la disponibilité de l'application 24h/24, 7j/7, mais ne peut garantir une disponibilité permanente. Des interruptions peuvent survenir pour maintenance ou mise à jour.</p>
+
+            <h3>7.2 Exactitude des analyses</h3>
+            <p>Les analyses statistiques (corrélations, tendances) sont calculées selon des méthodes reconnues, mais leur exactitude dépend de la qualité et de la quantité des données saisies par l'utilisateur.</p>
+
+            <h3>7.3 Reconnaissance d'ingrédients</h3>
+            <p>La reconnaissance automatique d'ingrédients via l'intelligence artificielle peut contenir des erreurs. L'utilisateur est invité à vérifier et corriger les ingrédients détectés avant validation.</p>
+        </section>
+
+        <section>
+            <h2>8. Droit applicable et juridiction</h2>
+            <p>Les présentes mentions légales sont régies par le droit français.</p>
+            <p>En cas de litige, et après échec de toute tentative de recherche d'une solution amiable, les tribunaux français seront seuls compétents.</p>
+            <p>Plateforme européenne de règlement des litiges en ligne : <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a></p>
+        </section>
+
+        <section>
+            <h2>9. Contact</h2>
+            <div class="contact-box">
+                <p><strong>Email général</strong> : <a href="mailto:support@intolerscan.com">support@intolerscan.com</a></p>
+                <p><strong>Protection des données</strong> : <a href="mailto:privacy@intolerscan.com">privacy@intolerscan.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dernière mise à jour : Décembre 2024</p>
+        <p><a href="/">Retour à l'accueil</a> | <a href="/cgu.html">CGU</a> | <a href="/privacy-policy.html">Politique de confidentialité</a></p>
+    </footer>
+</body>
+</html>
