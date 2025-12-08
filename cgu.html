@@ -147,14 +147,6 @@
             font-size: 0.85rem;
         }
 
-        .placeholder {
-            background-color: #FFFDE7;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-family: monospace;
-            font-size: 0.9em;
-        }
-
         .toc {
             background-color: var(--cream);
             padding: 1.5rem;
@@ -218,10 +210,10 @@
                 <li><a href="#definitions">Définitions</a></li>
                 <li><a href="#objet">Objet de l'Application</a></li>
                 <li><a href="#acces">Accès et inscription</a></li>
-                <li><a href="#gratuit">Service Gratuit</a></li>
-                <li><a href="#premium">Service Premium</a></li>
+                <li><a href="#gratuit">Version Gratuite</a></li>
+                <li><a href="#premium">Version Premium</a></li>
                 <li><a href="#utilisation">Utilisation</a></li>
-                <li><a href="#fonctionnalites">Fonctionnalités spécifiques</a></li>
+                <li><a href="#fonctionnalites">Fonctionnalités</a></li>
                 <li><a href="#propriete">Propriété intellectuelle</a></li>
                 <li><a href="#donnees">Protection des données</a></li>
                 <li><a href="#responsabilite">Responsabilité</a></li>
@@ -239,36 +231,37 @@
                 <li><strong>Application</strong> : L'application mobile IntolerScan disponible sur l'App Store (iOS) et le Google Play Store (Android).</li>
                 <li><strong>Utilisateur</strong> : Toute personne physique utilisant l'Application.</li>
                 <li><strong>Compte</strong> : L'espace personnel de l'Utilisateur créé lors de l'inscription.</li>
-                <li><strong>Service Gratuit</strong> : Les fonctionnalités de l'Application accessibles sans abonnement.</li>
-                <li><strong>Service Premium</strong> : Les fonctionnalités additionnelles accessibles via un abonnement payant.</li>
-                <li><strong>Contenu Utilisateur</strong> : L'ensemble des données, textes, images et informations saisies par l'Utilisateur.</li>
+                <li><strong>Version Gratuite</strong> : Les fonctionnalités de l'Application accessibles sans abonnement.</li>
+                <li><strong>Version Premium</strong> : Les fonctionnalités additionnelles accessibles via un abonnement payant.</li>
+                <li><strong>Contenu Utilisateur</strong> : L'ensemble des données, textes et informations saisies par l'Utilisateur.</li>
             </ul>
         </section>
 
         <section id="objet">
             <h2>Article 2 - Objet de l'Application</h2>
 
-            <h3>2.1 Description du service</h3>
-            <p>IntolerScan est une application de suivi personnel permettant de :</p>
+            <h3>2.1 Description</h3>
+            <p>IntolerScan est un <strong>carnet d'observation alimentaire</strong> permettant de :</p>
             <ul>
-                <li>Enregistrer les repas consommés (saisie manuelle, scan de codes-barres, analyse photo par IA)</li>
-                <li>Enregistrer les symptômes digestifs et leurs caractéristiques</li>
-                <li>Suivre les selles selon l'échelle de Bristol</li>
-                <li>Analyser les corrélations statistiques entre ingrédients et symptômes</li>
-                <li>Générer des rapports PDF à partager avec des professionnels de santé</li>
-                <li>Suivre des protocoles d'élimination alimentaire</li>
+                <li>Enregistrer ses prises alimentaires (saisie manuelle, scan de codes-barres, analyse photo par IA)</li>
+                <li>Enregistrer ses crises et leurs caractéristiques</li>
+                <li>Suivre ses selles selon l'échelle de Bristol (optionnel)</li>
+                <li>Enregistrer la prise de médicaments ou compléments</li>
+                <li>Observer les corrélations statistiques entre ingrédients et crises</li>
+                <li>Générer des rapports PDF et Excel à partager avec des professionnels de santé</li>
+                <li>Tenir un carnet d'observation structuré en 3 étapes</li>
             </ul>
 
-            <h3>2.2 Avertissement</h3>
+            <h3>2.2 Avertissement important</h3>
             <div class="warning-box">
-                <p><strong>L'Application n'est PAS un dispositif médical</strong> au sens du Règlement (UE) 2017/745.</p>
-                <p>L'Application ne fournit :</p>
+                <p><strong>IntolerScan n'est PAS un dispositif médical</strong> au sens du Règlement (UE) 2017/745.</p>
+                <p>L'Application est un simple <strong>outil de suivi personnel</strong> qui ne fournit :</p>
                 <ul>
-                    <li>Aucun diagnostic médical</li>
+                    <li>Aucun diagnostic</li>
                     <li>Aucune prescription ou recommandation de traitement</li>
                     <li>Aucun avis médical</li>
                 </ul>
-                <p>Les analyses et corrélations sont fournies <strong>à titre purement indicatif</strong>. Elles doivent être interprétées par un professionnel de santé qualifié.</p>
+                <p>Les corrélations et observations sont fournies <strong>à titre purement indicatif</strong>. Une corrélation ne prouve pas un lien de cause à effet. Seul un professionnel de santé qualifié peut interpréter ces données.</p>
             </div>
         </section>
 
@@ -276,8 +269,11 @@
             <h2>Article 3 - Accès et inscription</h2>
 
             <h3>3.1 Conditions d'accès</h3>
-            <p>L'Application est accessible à toute personne physique âgée de <strong>16 ans minimum</strong>.</p>
-            <p>Les mineurs de moins de 16 ans ne peuvent utiliser l'Application qu'avec l'autorisation et sous la supervision de leur représentant légal.</p>
+            <p>L'Application est accessible aux personnes physiques :</p>
+            <ul>
+                <li>Âgées de <strong>18 ans et plus</strong>, ou</li>
+                <li>Mineures, avec l'<strong>autorisation et sous la supervision</strong> de leur représentant légal</li>
+            </ul>
 
             <h3>3.2 Création de compte</h3>
             <p>Pour utiliser l'Application, l'Utilisateur doit créer un compte en fournissant :</p>
@@ -285,7 +281,7 @@
                 <li>Une adresse email valide</li>
                 <li>Un mot de passe sécurisé</li>
             </ul>
-            <p>Alternativement, l'Utilisateur peut s'inscrire via son compte Apple (Sign in with Apple) ou Google.</p>
+            <p>L'Utilisateur peut également réinitialiser son mot de passe en cas d'oubli via la fonction "Mot de passe oublié".</p>
 
             <h3>3.3 Responsabilité du compte</h3>
             <p>L'Utilisateur s'engage à :</p>
@@ -298,7 +294,7 @@
         </section>
 
         <section id="gratuit">
-            <h2>Article 4 - Service Gratuit</h2>
+            <h2>Article 4 - Version Gratuite</h2>
 
             <h3>4.1 Fonctionnalités incluses</h3>
             <table>
@@ -310,48 +306,49 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Enregistrement de repas, symptômes, selles</td>
-                        <td>10 entrées maximum (à vie)</td>
+                        <td>Enregistrements (prises alimentaires, crises, selles, médicaments)</td>
+                        <td>10 au total (à vie)</td>
                     </tr>
                     <tr>
-                        <td>Historique</td>
+                        <td>Historique accessible</td>
                         <td>30 derniers jours</td>
                     </tr>
                     <tr>
-                        <td>Corrélations ingrédient-symptôme</td>
-                        <td>3 corrélations visibles</td>
+                        <td>Corrélations affichées</td>
+                        <td>Top 3</td>
                     </tr>
                     <tr>
-                        <td>Export PDF</td>
-                        <td>3 exports maximum (à vie)</td>
+                        <td>Exports PDF</td>
+                        <td>3 (à vie)</td>
                     </tr>
                     <tr>
-                        <td>Notifications de suivi</td>
-                        <td>Inclus</td>
+                        <td>Notifications</td>
+                        <td>1 par jour maximum</td>
                     </tr>
                 </tbody>
             </table>
 
             <h3>4.2 Limitations</h3>
-            <p>Les limites du Service Gratuit sont <strong>définitives et ne se réinitialisent pas</strong>.</p>
+            <p>Les limites de la Version Gratuite sont <strong>définitives et cumulatives</strong>. Elles ne se réinitialisent pas.</p>
             <p>L'Éditeur se réserve le droit de modifier ces limites avec un préavis de 30 jours.</p>
         </section>
 
         <section id="premium">
-            <h2>Article 5 - Service Premium (Abonnement)</h2>
+            <h2>Article 5 - Version Premium (Abonnement)</h2>
 
             <h3>5.1 Fonctionnalités Premium</h3>
             <p>L'abonnement Premium débloque :</p>
             <ul>
-                <li><strong>Entrées illimitées</strong> (repas, symptômes, selles)</li>
+                <li><strong>Enregistrements illimités</strong></li>
                 <li><strong>Historique complet</strong> (sans limite de durée)</li>
-                <li><strong>Toutes les corrélations</strong> (analyse complète)</li>
-                <li><strong>Exports PDF illimités</strong></li>
-                <li><strong>Export Excel</strong> des données</li>
-                <li><strong>Timeline unifiée</strong> (vue chronologique complète)</li>
-                <li><strong>Protocoles d'élimination</strong> (phases élimination/réintroduction)</li>
+                <li><strong>Toutes les corrélations</strong> (Top 5)</li>
+                <li><strong>Exports PDF et Excel illimités</strong></li>
+                <li><strong>Timeline unifiée</strong> (chronologie de tous vos enregistrements)</li>
+                <li><strong>Carnet d'observation</strong> (suivi structuré en 3 étapes)</li>
+                <li><strong>Mode hors ligne robuste</strong></li>
                 <li><strong>Mode sombre</strong></li>
-                <li><strong>Support prioritaire</strong></li>
+                <li><strong>Tendances horaires et statistiques détaillées</strong></li>
+                <li><strong>Notifications illimitées</strong></li>
             </ul>
 
             <h3>5.2 Tarification</h3>
@@ -369,7 +366,7 @@
                     </tr>
                     <tr>
                         <td>Annuel</td>
-                        <td>49,99 € / an (économie de 17%)</td>
+                        <td>49,99 € / an</td>
                     </tr>
                 </tbody>
             </table>
@@ -388,7 +385,6 @@
 
             <h3>5.5 Remboursement</h3>
             <p>Les demandes de remboursement doivent être adressées directement à Apple ou Google selon la plateforme utilisée.</p>
-            <p>Conformément à l'article L221-28 du Code de la consommation, le droit de rétractation ne s'applique pas aux contenus numériques dont l'exécution a commencé avec l'accord du consommateur.</p>
 
             <h3>5.6 Restauration des achats</h3>
             <p>L'Utilisateur peut restaurer ses achats via le bouton « Restaurer les achats » dans les paramètres de l'Application.</p>
@@ -411,46 +407,59 @@
                 <li>Utiliser l'Application à des fins illégales ou frauduleuses</li>
                 <li>Tenter d'accéder aux comptes d'autres utilisateurs</li>
                 <li>Modifier, décompiler ou désassembler l'Application</li>
-                <li>Contourner les mesures de sécurité ou les limitations du Service Gratuit</li>
+                <li>Contourner les mesures de sécurité ou les limitations de la Version Gratuite</li>
                 <li>Utiliser des robots, scrapers ou outils automatisés</li>
                 <li>Revendre ou exploiter commercialement l'Application</li>
             </ul>
         </section>
 
         <section id="fonctionnalites">
-            <h2>Article 7 - Fonctionnalités spécifiques</h2>
+            <h2>Article 7 - Fonctionnalités</h2>
 
             <h3>7.1 Analyse photo par intelligence artificielle</h3>
-            <p>L'Application utilise Google Gemini AI pour analyser les photos de repas. L'Utilisateur reconnaît que :</p>
+            <p>L'Application utilise Google Gemini AI pour analyser les photos de repas et suggérer les ingrédients. L'Utilisateur reconnaît que :</p>
             <ul>
                 <li>L'analyse est automatique et peut contenir des erreurs</li>
-                <li>Il doit vérifier et corriger les ingrédients détectés avant validation</li>
+                <li>Il doit vérifier et corriger les ingrédients suggérés avant validation</li>
                 <li>Les photos sont traitées par les serveurs de Google</li>
             </ul>
 
             <h3>7.2 Scan de codes-barres</h3>
-            <p>L'Application utilise la base de données Open Food Facts. Certains produits peuvent ne pas être référencés ou avoir des informations incomplètes.</p>
+            <p>L'Application utilise la base de données Open Food Facts pour identifier les produits scannés. Certains produits peuvent ne pas être référencés ou avoir des informations incomplètes.</p>
 
-            <h3>7.3 Analyses statistiques</h3>
-            <p>L'Application calcule des corrélations statistiques (intervalles de confiance, odds ratio). Ces méthodes sont reconnues scientifiquement mais :</p>
+            <h3>7.3 Calcul des corrélations</h3>
+            <p>L'Application calcule des corrélations statistiques entre les ingrédients consommés et les crises déclarées. L'Utilisateur reconnaît que :</p>
             <ul>
-                <li>Leur pertinence dépend du volume de données saisies</li>
-                <li>Une corrélation ne prouve pas une causalité</li>
-                <li>Seul un professionnel de santé peut interpréter ces résultats</li>
+                <li>La pertinence des corrélations dépend du volume de données saisies</li>
+                <li><strong>Une corrélation ne prouve pas un lien de cause à effet</strong></li>
+                <li>Seul un professionnel de santé peut interpréter ces observations</li>
             </ul>
 
-            <h3>7.4 Protocoles d'élimination (Premium)</h3>
-            <p>Les protocoles d'élimination sont des outils de suivi comportant trois phases : élimination, réintroduction, observation. Ils sont fournis à titre informatif et ne remplacent pas un suivi médical.</p>
+            <h3>7.4 Carnet d'observation (Premium)</h3>
+            <p>Le carnet d'observation est un outil de suivi structuré en 3 étapes :</p>
+            <ol>
+                <li><strong>Élimination</strong> : Noter l'éviction d'un aliment</li>
+                <li><strong>Réintroduction</strong> : Noter la réintroduction progressive</li>
+                <li><strong>Observation</strong> : Noter les réactions éventuelles</li>
+            </ol>
+            <p>Cet outil est fourni à titre informatif pour faciliter le suivi personnel. Il ne remplace pas un accompagnement par un professionnel de santé.</p>
 
             <h3>7.5 Notifications</h3>
             <p>L'Application peut envoyer des notifications locales pour :</p>
             <ul>
-                <li>Rappels de repas (11h et 19h)</li>
-                <li>Suivi post-repas (3h après un repas)</li>
-                <li>Motivation quotidienne (20h si aucun repas saisi)</li>
-                <li>Transitions de protocole</li>
+                <li>Rappels de repas</li>
+                <li>Suivi post-repas</li>
+                <li>Motivation quotidienne</li>
             </ul>
             <p>L'Utilisateur peut désactiver les notifications à tout moment dans les paramètres.</p>
+
+            <h3>7.6 Exports</h3>
+            <p>L'Application permet d'exporter les données sous deux formats :</p>
+            <ul>
+                <li><strong>PDF</strong> : Rapport d'observation synthétique</li>
+                <li><strong>Excel</strong> : Données détaillées (prises alimentaires, crises, corrélations, selles, carnet d'observation)</li>
+            </ul>
+            <p>Ces exports sont destinés à être partagés avec un professionnel de santé.</p>
         </section>
 
         <section id="propriete">
@@ -487,8 +496,8 @@
             <p>L'Éditeur ne peut être tenu responsable :</p>
             <ul>
                 <li>Des dommages résultant de l'utilisation ou de l'impossibilité d'utiliser l'Application</li>
-                <li>Des erreurs d'analyse ou de reconnaissance d'ingrédients</li>
-                <li>Des décisions prises par l'Utilisateur sur la base des informations fournies</li>
+                <li>Des erreurs dans la reconnaissance d'ingrédients par l'IA</li>
+                <li>Des décisions prises par l'Utilisateur sur la base des observations fournies</li>
                 <li>Des interruptions de service pour maintenance ou mise à jour</li>
                 <li>De la perte de données en cas de force majeure</li>
             </ul>
