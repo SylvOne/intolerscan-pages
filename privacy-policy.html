@@ -3,822 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politique de Confidentialité - IntolerScan</title>
+    <meta name="description" content="Politique de confidentialité de l'application IntolerScan.">
+    <title>Politique de confidentialité - IntolerScan</title>
     <style>
         :root {
-            --sage: #2C5F4D;
-            --ochre: #8B6439;
-            --warm-beige: #E8DCC8;
-            --cream: #F5F0E8;
-            --terracotta: #C17855;
-            --dark-text: #2D2D2D;
+            color-scheme: light;
+            --sage: #2c5f4d;
+            --sage-dark: #21483a;
+            --cream: #f7f3ec;
+            --paper: #ffffff;
+            --text: #252a28;
+            --muted: #606964;
+            --line: #d8e1dc;
+            --accent: #e9f3ee;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background-color: var(--cream);
-            color: var(--dark-text);
-            line-height: 1.6;
+            margin: 0;
+            background: var(--cream);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.65;
         }
-
-        header {
-            background-color: var(--sage);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            opacity: 0.9;
-            font-size: 0.95rem;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-        }
-
-        section {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            color: var(--sage);
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--warm-beige);
-        }
-
-        h3 {
-            color: var(--ochre);
-            font-size: 1.1rem;
-            margin: 1rem 0 0.5rem 0;
-        }
-
-        h4 {
-            color: var(--dark-text);
-            font-size: 1rem;
-            margin: 0.8rem 0 0.4rem 0;
-        }
-
-        p {
-            margin-bottom: 0.8rem;
-        }
-
-        ul, ol {
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        li {
-            margin-bottom: 0.4rem;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
-            font-size: 0.9rem;
-        }
-
-        th, td {
-            padding: 0.75rem;
-            text-align: left;
-            border-bottom: 1px solid var(--warm-beige);
-        }
-
-        th {
-            background-color: var(--cream);
-            color: var(--sage);
-            font-weight: 600;
-        }
-
-        .warning-box {
-            background-color: #FFF3E0;
-            border-left: 4px solid var(--terracotta);
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .warning-box strong {
-            color: var(--terracotta);
-        }
-
-        .info-box {
-            background-color: #E3F2FD;
-            border-left: 4px solid var(--sage);
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .success-box {
-            background-color: #E8F5E9;
-            border-left: 4px solid #4CAF50;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .contact-box {
-            background-color: var(--cream);
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-
-        a {
-            color: var(--sage);
+        header, main, footer { width: min(880px, calc(100% - 32px)); margin-inline: auto; }
+        header { padding: 48px 0 24px; }
+        nav { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; }
+        nav a, .button {
+            border: 1px solid var(--sage);
+            border-radius: 999px;
+            color: var(--sage-dark);
+            padding: 8px 14px;
             text-decoration: none;
         }
-
-        a:hover {
-            text-decoration: underline;
+        nav a[aria-current="page"], .button { background: var(--sage); color: white; }
+        h1 { margin: 0 0 8px; color: var(--sage-dark); font-size: clamp(2rem, 6vw, 3rem); }
+        h2 { color: var(--sage-dark); margin-top: 0; }
+        h3 { color: var(--sage); }
+        .lead { color: var(--muted); font-size: 1.08rem; }
+        .card {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            margin-bottom: 18px;
+            padding: clamp(20px, 4vw, 32px);
         }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #666;
-            font-size: 0.85rem;
-        }
-
-        .toc {
-            background-color: var(--cream);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 1.5rem;
-        }
-
-        .toc h3 {
-            margin-top: 0;
-            color: var(--sage);
-        }
-
-        .toc ol {
-            columns: 2;
-            column-gap: 2rem;
-        }
-
-        .summary-table {
-            background-color: var(--cream);
-            border-radius: 8px;
-            padding: 1rem;
-            margin: 1rem 0;
-        }
-
-        .summary-table table {
-            margin: 0;
-        }
-
-        code {
-            background-color: var(--cream);
-            padding: 0.1rem 0.3rem;
-            border-radius: 3px;
-            font-size: 0.9em;
-        }
-
-        .placeholder {
-            background-color: #FFFDE7;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-family: monospace;
-            font-size: 0.9em;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.5rem;
-            }
-
-            main {
-                padding: 1rem;
-            }
-
-            section {
-                padding: 1rem;
-            }
-
-            table {
-                font-size: 0.75rem;
-            }
-
-            th, td {
-                padding: 0.4rem;
-            }
-
-            .toc ol {
-                columns: 1;
-            }
-        }
+        .principle { background: var(--accent); border-left: 5px solid var(--sage); }
+        li + li { margin-top: 8px; }
+        a { color: var(--sage-dark); }
+        footer { color: var(--muted); padding: 14px 0 40px; text-align: center; }
+        :focus-visible { outline: 3px solid #b16f3b; outline-offset: 3px; }
     </style>
 </head>
 <body>
     <header>
-        <h1>Politique de Confidentialité</h1>
-        <p>Application IntolerScan</p>
+        <nav aria-label="Navigation principale">
+            <a href="privacy-policy.html" aria-current="page">Confidentialité</a>
+            <a href="support.html">Support</a>
+            <a href="account-deletion.html">Supprimer un compte</a>
+        </nav>
+        <h1>Politique de confidentialité</h1>
+        <p class="lead">Dernière mise à jour : 25 septembre 2026</p>
     </header>
 
     <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>La présente Politique de Confidentialité décrit comment <strong>Sylvain Franchot</strong>, auto-entrepreneur (ci-après « nous », « notre », « l'Éditeur »), collecte, utilise, stocke et protège vos données personnelles lors de votre utilisation de l'application mobile <strong>IntolerScan</strong>.</p>
-
-            <p>Nous nous engageons à respecter votre vie privée conformément au :</p>
-            <ul>
-                <li><strong>Règlement Général sur la Protection des Données (RGPD)</strong> - Règlement (UE) 2016/679</li>
-                <li><strong>Loi Informatique et Libertés</strong> - Loi n°78-17 du 6 janvier 1978</li>
-            </ul>
-
-            <div class="contact-box">
-                <p><strong>Contact Protection des Données</strong> : <a href="mailto:privacy@intolerscan.com">privacy@intolerscan.com</a></p>
-            </div>
+        <section class="card principle">
+            <h2>Le principe d’IntolerScan</h2>
+            <p>IntolerScan est un journal alimentaire. L’application peut compter et montrer les informations que vous enregistrez, mais elle ne doit pas les interpréter. Elle ne fournit ni diagnostic, ni conclusion causale, ni recommandation médicale.</p>
         </section>
 
-        <div class="toc">
-            <h3>Sommaire</h3>
-            <ol>
-                <li><a href="#responsable">Responsable du traitement</a></li>
-                <li><a href="#collecte">Données collectées</a></li>
-                <li><a href="#finalites">Finalités et base légale</a></li>
-                <li><a href="#destinataires">Destinataires des données</a></li>
-                <li><a href="#transferts">Transferts internationaux</a></li>
-                <li><a href="#conservation">Durée de conservation</a></li>
-                <li><a href="#securite">Sécurité des données</a></li>
-                <li><a href="#droits">Vos droits</a></li>
-                <li><a href="#mineurs">Mineurs</a></li>
-                <li><a href="#cookies">Cookies et technologies</a></li>
-                <li><a href="#modifications">Modifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ol>
-        </div>
-
-        <section id="responsable">
-            <h2>1. Responsable du traitement</h2>
-            <div class="contact-box">
-                <p><strong>Sylvain Franchot</strong></p>
-                <p>Auto-entrepreneur</p>
-                <p>SIRET : <span class="placeholder">[EN ATTENTE D'IMMATRICULATION]</span></p>
-                <p>France</p>
-                <br>
-                <p><strong>Email</strong> : <a href="mailto:support@intolerscan.com">support@intolerscan.com</a></p>
-                <p><strong>Email DPO</strong> : <a href="mailto:privacy@intolerscan.com">privacy@intolerscan.com</a></p>
-            </div>
-        </section>
-
-        <section id="collecte">
-            <h2>2. Données collectées</h2>
-
-            <h3>2.1 Données que vous nous fournissez</h3>
-
-            <h4>Données de compte</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Donnée</th>
-                        <th>Obligatoire</th>
-                        <th>Finalité</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Adresse email</td>
-                        <td>Oui</td>
-                        <td>Création de compte, authentification</td>
-                    </tr>
-                    <tr>
-                        <td>Mot de passe</td>
-                        <td>Oui</td>
-                        <td>Authentification (stocké hashé)</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h4>Données de suivi alimentaire</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Données</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Repas</strong></td>
-                        <td>Date/heure, liste d'ingrédients, niveau de stress, notes, indicateur médicament</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Symptômes</strong></td>
-                        <td>Date/heure, description, intensité (faible/modéré/élevé), repas associé</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Selles</strong></td>
-                        <td>Date/heure, type Bristol (1-7), notes</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Carnet d'observation</strong></td>
-                        <td>Ingrédient ciblé, phases, journal quotidien, résultat observé</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h4>Données de préférences</h4>
+        <section class="card">
+            <h2>1. Données traitées</h2>
+            <p>Selon les fonctions que vous utilisez, IntolerScan peut traiter :</p>
             <ul>
-                <li>Thème de l'application (clair/sombre/système)</li>
-                <li>Notifications activées (oui/non)</li>
-            </ul>
-
-            <h3>2.2 Données collectées automatiquement</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Donnée</th>
-                        <th>Source</th>
-                        <th>Finalité</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Identifiant Firebase</td>
-                        <td>Firebase Auth</td>
-                        <td>Identification unique</td>
-                    </tr>
-                    <tr>
-                        <td>Type d'appareil / Version OS</td>
-                        <td>Firebase Analytics</td>
-                        <td>Compatibilité</td>
-                    </tr>
-                    <tr>
-                        <td>Version de l'app</td>
-                        <td>Firebase Analytics</td>
-                        <td>Support technique</td>
-                    </tr>
-                    <tr>
-                        <td>Écrans consultés</td>
-                        <td>Firebase Analytics</td>
-                        <td>Amélioration UX (anonymisé)</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="info-box">
-                <p><strong>Important</strong> : Les données d'utilisation sont collectées de manière anonymisée et agrégée. Elles ne permettent pas de vous identifier personnellement.</p>
-            </div>
-
-            <h3>2.3 Données NON collectées</h3>
-            <p>Nous ne collectons <strong>jamais</strong> :</p>
-            <ul>
-                <li>Votre nom complet ou identité civile</li>
-                <li>Votre adresse postale</li>
-                <li>Votre numéro de téléphone</li>
-                <li>Vos données bancaires (gérées par Apple/Google)</li>
-                <li>Votre géolocalisation</li>
-                <li>Vos contacts</li>
+                <li><strong>Compte :</strong> adresse e-mail, identifiant Firebase et informations techniques d’authentification.</li>
+                <li><strong>Journal :</strong> dates et heures, repas, ingrédients, niveau de stress renseigné, notes, médicaments ou compléments, crises et observations, intensité déclarée, transit et type Bristol.</li>
+                <li><strong>Suivi ciblé :</strong> ingrédients choisis, période de suivi et événements factuels affichés dans ce suivi.</li>
+                <li><strong>Scanner et photos :</strong> photo choisie ou prise pour un scan, code-barres détecté, ingrédients proposés et validation effectuée par l’utilisateur. Une photo de repas n’est conservée dans Photo History que lorsque cette fonction est utilisée et autorisée pour le compte.</li>
+                <li><strong>Abonnement et quotas :</strong> état Premium, droits, compteurs d’entrées ou d’exports et informations de transaction rendues disponibles par la plateforme et RevenueCat.</li>
+                <li><strong>Données techniques :</strong> informations nécessaires au fonctionnement, à la sécurité, à la synchronisation et au diagnostic des erreurs. Le parcours Open Food Facts journalise aussi un événement technique comprenant la source de la réponse, le code-barres, la durée et le succès de la requête.</li>
             </ul>
         </section>
 
-        <section id="finalites">
-            <h2>3. Finalités et base légale</h2>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Finalité</th>
-                        <th>Base légale (RGPD)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Création et gestion de compte</td>
-                        <td>Exécution du contrat (Art. 6.1.b)</td>
-                    </tr>
-                    <tr>
-                        <td>Fourniture du service (stockage repas, symptômes)</td>
-                        <td>Exécution du contrat (Art. 6.1.b)</td>
-                    </tr>
-                    <tr>
-                        <td>Analyse des corrélations</td>
-                        <td>Exécution du contrat (Art. 6.1.b)</td>
-                    </tr>
-                    <tr>
-                        <td>Génération de rapports (PDF, Excel)</td>
-                        <td>Exécution du contrat (Art. 6.1.b)</td>
-                    </tr>
-                    <tr>
-                        <td>Gestion des abonnements</td>
-                        <td>Exécution du contrat (Art. 6.1.b)</td>
-                    </tr>
-                    <tr>
-                        <td>Envoi de notifications</td>
-                        <td>Consentement (Art. 6.1.a)</td>
-                    </tr>
-                    <tr>
-                        <td>Amélioration de l'application</td>
-                        <td>Intérêt légitime (Art. 6.1.f)</td>
-                    </tr>
-                    <tr>
-                        <td>Support technique</td>
-                        <td>Exécution du contrat (Art. 6.1.b)</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="info-box">
-                <p><strong>Note importante</strong> : IntolerScan n'est pas un dispositif médical. Les données que vous saisissez (repas, symptômes, selles) sont des données de suivi personnel que vous choisissez d'enregistrer pour votre propre usage.</p>
-            </div>
-        </section>
-
-        <section id="destinataires">
-            <h2>4. Destinataires des données</h2>
-
-            <h3>4.1 Accès interne</h3>
-            <p>Seul l'Éditeur a accès à vos données, dans le cadre strict de la maintenance technique et du support utilisateur.</p>
-
-            <h3>4.2 Sous-traitants</h3>
-            <p>Nous faisons appel aux sous-traitants suivants :</p>
-
-            <h4>Google Cloud Platform / Firebase</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Service</th>
-                        <th>Données traitées</th>
-                        <th>Localisation</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Firebase Authentication</td>
-                        <td>Email, identifiants</td>
-                        <td>UE (europe-west1)</td>
-                    </tr>
-                    <tr>
-                        <td>Cloud Firestore</td>
-                        <td>Toutes les données utilisateur</td>
-                        <td>UE (europe-west1)</td>
-                    </tr>
-                    <tr>
-                        <td>Firebase Analytics</td>
-                        <td>Données anonymisées</td>
-                        <td>UE</td>
-                    </tr>
-                    <tr>
-                        <td>Google Gemini AI</td>
-                        <td>Photos de repas (optionnel)</td>
-                        <td>UE</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><strong>Google Ireland Limited</strong> - Gordon House, Barrow Street, Dublin 4, Irlande<br>
-            Certifié ISO 27001, SOC 2, SOC 3</p>
-
-            <h4>RevenueCat</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Service</th>
-                        <th>Données traitées</th>
-                        <th>Localisation</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Gestion abonnements</td>
-                        <td>Identifiant utilisateur, statut Premium</td>
-                        <td>USA</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><strong>RevenueCat, Inc.</strong> - San Francisco, CA, USA<br>
-            Certifié SOC 2 Type II - Données partagées : uniquement l'identifiant Firebase (pseudonymisé), jamais vos données de suivi.</p>
-
-            <h4>Open Food Facts</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Service</th>
-                        <th>Données traitées</th>
-                        <th>Localisation</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Base produits alimentaires</td>
-                        <td>Codes-barres scannés</td>
-                        <td>France</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><strong>Association Open Food Facts</strong> - Paris, France<br>
-            Base de données publique - les codes-barres ne sont pas associés à votre compte.</p>
-
-            <h3>4.3 Aucun partage avec des tiers</h3>
-            <div class="success-box">
-                <p>Nous ne vendons, ne louons et ne partageons <strong>jamais</strong> vos données personnelles avec des tiers à des fins commerciales ou publicitaires.</p>
-            </div>
-        </section>
-
-        <section id="transferts">
-            <h2>5. Transferts internationaux</h2>
-
-            <h3>5.1 Localisation principale</h3>
-            <p>Vos données sont principalement stockées dans l'<strong>Union Européenne</strong> :</p>
+        <section class="card">
+            <h2>2. Où et comment les données sont traitées</h2>
+            <h3>Sur l’appareil</h3>
             <ul>
-                <li><strong>Firebase/Firestore</strong> : Région <code>europe-west1</code> (Belgique)</li>
-                <li><strong>Open Food Facts</strong> : France</li>
+                <li>Le journal dispose d’un stockage SQLite local et d’une file de synchronisation liée au compte connecté.</li>
+                <li>La détection initiale d’un code-barres et la préparation des images sont réalisées localement.</li>
+                <li>Les exports Excel et Carte du journal HTML sont générés localement, puis remis au mécanisme de partage du système. Vous choisissez leur destination.</li>
             </ul>
 
-            <h3>5.2 Transferts vers les États-Unis</h3>
-            <p>RevenueCat (gestion des abonnements) est basé aux USA. Ces transferts sont encadrés par :</p>
+            <h3>Dans les services Firebase</h3>
             <ul>
-                <li><strong>Clauses Contractuelles Types (CCT)</strong> de la Commission Européenne</li>
-                <li><strong>Chiffrement</strong> des données en transit (TLS 1.3) et au repos (AES-256)</li>
-                <li><strong>Pseudonymisation</strong> des données transmises</li>
+                <li>Firebase Authentication gère le compte.</li>
+                <li>Cloud Firestore synchronise les données du journal, les suivis ciblés, les états de quota et les informations nécessaires au fonctionnement des services.</li>
+                <li>Cloud Functions exécute les opérations serveur protégées, notamment le Scanner, les quotas, les droits Premium, Photo History et la suppression du compte.</li>
+                <li>Firebase Storage conserve uniquement les photos intégrées à Photo History, dans les conditions prévues par cette fonction. Une photo de scan n’y est donc pas systématiquement conservée.</li>
+                <li>Firebase App Check contribue à limiter les appels non autorisés. Firebase Analytics reçoit les événements techniques effectivement instrumentés dans l’application.</li>
             </ul>
         </section>
 
-        <section id="conservation">
-            <h2>6. Durée de conservation</h2>
-
-            <h3>6.1 Principe général</h3>
-            <p>Vos données sont conservées <strong>tant que votre compte est actif</strong>.</p>
-
-            <h3>6.2 Suppression du compte</h3>
-            <div class="success-box">
-                <p><strong>Suppression immédiate</strong> : Lorsque vous supprimez votre compte, toutes vos données sont supprimées immédiatement et de manière irréversible.</p>
-            </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Type de données</th>
-                        <th>Délai de suppression</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Données de suivi (repas, symptômes, selles)</td>
-                        <td>Immédiat</td>
-                    </tr>
-                    <tr>
-                        <td>Données du carnet d'observation</td>
-                        <td>Immédiat</td>
-                    </tr>
-                    <tr>
-                        <td>Préférences</td>
-                        <td>Immédiat</td>
-                    </tr>
-                    <tr>
-                        <td>Compte Firebase Auth</td>
-                        <td>Immédiat</td>
-                    </tr>
-                    <tr>
-                        <td>Logs techniques anonymisés</td>
-                        <td>90 jours</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>6.3 Compte inactif</h3>
-            <p>En cas d'inactivité prolongée (24 mois sans connexion), nous vous enverrons un email de rappel. Sans réponse sous 30 jours, le compte pourra être supprimé.</p>
-        </section>
-
-        <section id="securite">
-            <h2>7. Sécurité des données</h2>
-
-            <h3>7.1 Mesures techniques</h3>
+        <section class="card">
+            <h2>3. Prestataires utilisés</h2>
             <ul>
-                <li><strong>Chiffrement en transit</strong> : TLS 1.3 pour toutes les communications</li>
-                <li><strong>Chiffrement au repos</strong> : AES-256 pour le stockage Firebase</li>
-                <li><strong>Mots de passe</strong> : Hashés avec bcrypt (via Firebase Auth)</li>
-                <li><strong>Authentification</strong> : Tokens JWT avec expiration courte</li>
+                <li><strong>Google Firebase :</strong> authentification, base de données, stockage Photo History, fonctions serveur, protection des appels et mesure technique.</li>
+                <li><strong>Google Gemini :</strong> une image du Scanner peut être transmise, via une fonction serveur, afin de proposer un type de contenu et une liste d’ingrédients à vérifier avant toute sauvegarde.</li>
+                <li><strong>Open Food Facts :</strong> le code-barres et la langue demandée servent à rechercher les ingrédients d’un produit. IntolerScan ne lui transmet pas votre journal, vos crises ou vos observations.</li>
+                <li><strong>RevenueCat et la boutique de votre plateforme :</strong> gestion des achats, abonnements et droits Premium. Ces services ne reçoivent pas le contenu de votre journal par ce parcours.</li>
             </ul>
-
-            <h3>7.2 Certifications de l'infrastructure</h3>
-            <p>Google Cloud Platform (hébergeur) est certifié :</p>
-            <ul>
-                <li>ISO 27001 (sécurité de l'information)</li>
-                <li>ISO 27017 (sécurité cloud)</li>
-                <li>ISO 27018 (protection des données personnelles)</li>
-                <li>SOC 2 / SOC 3</li>
-            </ul>
-
-            <h3>7.3 Signalement des violations</h3>
-            <p>En cas de violation de données, nous nous engageons à :</p>
-            <ol>
-                <li>Notifier la CNIL sous 72 heures</li>
-                <li>Vous informer dans les meilleurs délais si le risque est élevé</li>
-                <li>Prendre les mesures correctives nécessaires</li>
-            </ol>
+            <p>IntolerScan ne vend pas le contenu de votre journal. Chaque prestataire traite les données selon ses propres conditions et obligations.</p>
         </section>
 
-        <section id="droits">
-            <h2>8. Vos droits</h2>
-
-            <p>Conformément au RGPD, vous disposez des droits suivants :</p>
-
-            <div class="summary-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Droit</th>
-                            <th>Description</th>
-                            <th>Comment l'exercer</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Accès</strong> (Art. 15)</td>
-                            <td>Obtenir une copie de vos données</td>
-                            <td>Export dans l'app ou email</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Rectification</strong> (Art. 16)</td>
-                            <td>Corriger des données inexactes</td>
-                            <td>Modifier dans l'app</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Effacement</strong> (Art. 17)</td>
-                            <td>Supprimer vos données</td>
-                            <td>Supprimer le compte (Paramètres)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Limitation</strong> (Art. 18)</td>
-                            <td>Limiter le traitement</td>
-                            <td>Email à privacy@intolerscan.com</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Portabilité</strong> (Art. 20)</td>
-                            <td>Récupérer vos données</td>
-                            <td>Export PDF/Excel dans l'app</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Opposition</strong> (Art. 21)</td>
-                            <td>S'opposer au traitement</td>
-                            <td>Paramètres de l'app ou email</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h3>Délais de réponse</h3>
-            <ul>
-                <li><strong>Délai standard</strong> : 1 mois maximum</li>
-                <li><strong>Extension possible</strong> : 2 mois si demande complexe</li>
-            </ul>
-
-            <h3>Réclamation auprès de la CNIL</h3>
-            <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez déposer une réclamation auprès de la CNIL :</p>
-            <div class="contact-box">
-                <p><strong>CNIL</strong></p>
-                <p>3 Place de Fontenoy - TSA 80715</p>
-                <p>75334 PARIS CEDEX 07</p>
-                <p>Site web : <a href="https://www.cnil.fr/plaintes" target="_blank">www.cnil.fr/plaintes</a></p>
-            </div>
+        <section class="card">
+            <h2>4. Finalités</h2>
+            <p>Les données servent à fournir le journal et sa synchronisation, préparer les propositions du Scanner, afficher les vues descriptives, gérer Photo History, produire les exports demandés, appliquer les quotas et droits Premium, sécuriser le service, supprimer un compte et répondre au support.</p>
         </section>
 
-        <section id="mineurs">
-            <h2>9. Mineurs</h2>
-            <p>L'Application est destinée aux personnes âgées de <strong>18 ans et plus</strong>.</p>
-            <p>Les mineurs (moins de 18 ans) peuvent utiliser l'Application uniquement avec l'autorisation et sous la surveillance de leur représentant légal.</p>
-            <p>Nous ne collectons pas sciemment de données concernant des enfants de moins de 16 ans sans consentement parental vérifié.</p>
-            <p>Si vous pensez qu'un mineur utilise l'Application sans autorisation parentale appropriée, contactez-nous à <a href="mailto:privacy@intolerscan.com">privacy@intolerscan.com</a>.</p>
+        <section class="card">
+            <h2>5. Conservation</h2>
+            <p>Les données associées au compte sont conservées tant que le compte et les fonctions correspondantes sont utilisés, sous réserve des mécanismes de suppression et de durée propres aux services techniques.</p>
+            <p>Lors d’une suppression confirmée dans l’application, le service supprime les données Firebase attribuées au compte, les photos privées Photo History et le compte Firebase Authentication, puis nettoie les données locales de cet utilisateur sur l’appareil. L’opération est irréversible.</p>
+            <p>La suppression IntolerScan ne supprime pas à distance le dossier client détenu par RevenueCat ni les historiques de transaction conservés par la boutique. Certains éléments peuvent être conservés uniquement lorsqu’une obligation légale applicable l’impose.</p>
         </section>
 
-        <section id="cookies">
-            <h2>10. Cookies et technologies similaires</h2>
-            <p>En tant qu'application mobile native, IntolerScan <strong>n'utilise pas de cookies</strong> au sens traditionnel.</p>
-
-            <h3>Technologies utilisées</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Technologie</th>
-                        <th>Fournisseur</th>
-                        <th>Finalité</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Firebase Analytics SDK</td>
-                        <td>Google</td>
-                        <td>Statistiques d'utilisation (anonymisé)</td>
-                    </tr>
-                    <tr>
-                        <td>SharedPreferences</td>
-                        <td>Local</td>
-                        <td>Préférences utilisateur</td>
-                    </tr>
-                    <tr>
-                        <td>SQLite</td>
-                        <td>Local</td>
-                        <td>Cache hors-ligne</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Vous pouvez désactiver la collecte de données analytiques via les paramètres de l'Application.</p>
+        <section class="card">
+            <h2>6. Suppression du compte</h2>
+            <p>Dans l’application : <strong>Réglages → Supprimer mon compte</strong>.</p>
+            <p>Sans accès à l’application, consultez la page <a class="button" href="account-deletion.html">Suppression du compte IntolerScan</a>.</p>
         </section>
 
-        <section id="modifications">
-            <h2>11. Modifications de la politique</h2>
-            <p>Nous pouvons modifier cette Politique de Confidentialité pour refléter les évolutions de nos pratiques ou pour nous conformer à de nouvelles exigences légales.</p>
-            <p>Toute modification substantielle vous sera notifiée par notification dans l'Application et/ou par email.</p>
-            <p>Les modifications entrent en vigueur <strong>30 jours</strong> après leur notification.</p>
-
-            <h3>Historique des versions</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Version</th>
-                        <th>Date</th>
-                        <th>Changements</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1.0</td>
-                        <td>Décembre 2024</td>
-                        <td>Version initiale</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="card">
+            <h2>7. Vos choix et demandes</h2>
+            <p>Vous pouvez corriger ou supprimer des éléments du journal dans l’application, exporter vos données enregistrées en Excel, et demander l’accès, la rectification, l’effacement ou la portabilité lorsque le droit applicable le prévoit.</p>
+            <p>Pour une demande concernant vos données, écrivez à <a href="mailto:support@intolerscan.com">support@intolerscan.com</a>. Une vérification raisonnable de l’identité peut être demandée afin de protéger le compte.</p>
         </section>
 
-        <section id="contact">
-            <h2>12. Contact</h2>
-            <div class="contact-box">
-                <p><strong>Questions sur vos données</strong> : <a href="mailto:privacy@intolerscan.com">privacy@intolerscan.com</a></p>
-                <p><strong>Support général</strong> : <a href="mailto:support@intolerscan.com">support@intolerscan.com</a></p>
-            </div>
-            <p>Nous nous efforçons de répondre sous 48 heures ouvrées.</p>
+        <section class="card">
+            <h2>8. Sécurité</h2>
+            <p>IntolerScan utilise notamment HTTPS/TLS, Firebase Authentication, App Check, des règles d’accès et des traitements limités à l’identité du compte. Aucun système n’offre toutefois une sécurité absolue. En cas de doute, contactez le support sans transmettre de mot de passe ni de jeton d’accès.</p>
         </section>
 
-        <section>
-            <h2>Résumé de vos droits</h2>
-            <div class="summary-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Action</th>
-                            <th>Comment faire</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Accéder à vos données</td>
-                            <td>Export dans l'app ou email privacy@intolerscan.com</td>
-                        </tr>
-                        <tr>
-                            <td>Modifier vos données</td>
-                            <td>Directement dans l'app</td>
-                        </tr>
-                        <tr>
-                            <td>Supprimer vos données</td>
-                            <td>Supprimer le compte (Paramètres)</td>
-                        </tr>
-                        <tr>
-                            <td>Exporter vos données</td>
-                            <td>Export PDF/Excel dans l'app</td>
-                        </tr>
-                        <tr>
-                            <td>Désactiver les analytics</td>
-                            <td>Paramètres de l'app</td>
-                        </tr>
-                        <tr>
-                            <td>Porter plainte</td>
-                            <td><a href="https://www.cnil.fr/plaintes" target="_blank">www.cnil.fr/plaintes</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <section class="card">
+            <h2>9. Évolution de cette politique</h2>
+            <p>Cette politique peut évoluer avec le produit ou les obligations applicables. La date affichée en haut de page permet d’identifier la version courante.</p>
         </section>
 
-        <div class="info-box">
-            <p><strong>En utilisant IntolerScan, vous reconnaissez avoir lu et compris la présente Politique de Confidentialité.</strong></p>
-        </div>
+        <section class="card">
+            <h2>10. Contact</h2>
+            <p>IntolerScan — Sylvain Franchot, France<br>
+                <a href="mailto:support@intolerscan.com">support@intolerscan.com</a>
+            </p>
+            <p>Pour l’assistance générale, consultez la <a href="support.html">page Support</a>.</p>
+        </section>
     </main>
 
-    <footer>
-        <p>Dernière mise à jour : Décembre 2024 - Version 1.0</p>
-        <p><a href="/">Retour à l'accueil</a> | <a href="/mentions-legales.html">Mentions légales</a> | <a href="/cgu.html">CGU</a></p>
-    </footer>
+    <footer>© 2026 IntolerScan. Tous droits réservés.</footer>
 </body>
 </html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Procédure de suppression d'un compte IntolerScan et de ses données associées.">
+    <title>Suppression du compte IntolerScan</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --sage: #2c5f4d;
+            --sage-dark: #21483a;
+            --cream: #f7f3ec;
+            --paper: #ffffff;
+            --text: #252a28;
+            --muted: #606964;
+            --line: #d8e1dc;
+            --accent: #fff4e6;
+            --warning: #9a4b20;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: var(--cream);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.65;
+        }
+        header, main, footer { width: min(880px, calc(100% - 32px)); margin-inline: auto; }
+        header { padding: 48px 0 24px; }
+        nav { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; }
+        nav a, .button {
+            border: 1px solid var(--sage);
+            border-radius: 999px;
+            color: var(--sage-dark);
+            padding: 8px 14px;
+            text-decoration: none;
+        }
+        nav a[aria-current="page"], .button { background: var(--sage); color: white; }
+        h1 { margin: 0 0 8px; color: var(--sage-dark); font-size: clamp(2rem, 6vw, 3rem); }
+        h2 { color: var(--sage-dark); margin-top: 0; }
+        .lead { color: var(--muted); font-size: 1.08rem; }
+        .card {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            margin-bottom: 18px;
+            padding: clamp(20px, 4vw, 32px);
+        }
+        .warning { background: var(--accent); border-left: 5px solid var(--warning); }
+        .button { display: inline-block; font-weight: 700; margin: 6px 0; }
+        li + li { margin-top: 8px; }
+        a { color: var(--sage-dark); }
+        footer { color: var(--muted); padding: 14px 0 40px; text-align: center; }
+        :focus-visible { outline: 3px solid #b16f3b; outline-offset: 3px; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Navigation principale">
+            <a href="privacy-policy.html">Confidentialité</a>
+            <a href="support.html">Support</a>
+            <a href="account-deletion.html" aria-current="page">Supprimer un compte</a>
+        </nav>
+        <h1>Suppression du compte IntolerScan</h1>
+        <p class="lead">Deux moyens permettent de demander la suppression du compte et des données IntolerScan associées.</p>
+    </header>
+
+    <main>
+        <section class="card warning">
+            <h2>Avant de continuer</h2>
+            <p>La suppression confirmée est irréversible. Vous perdez l’accès au compte et aux données IntolerScan qui lui sont associées. Exportez d’abord les éléments que vous souhaitez conserver.</p>
+        </section>
+
+        <section class="card">
+            <h2>Depuis l’application</h2>
+            <ol>
+                <li>Ouvrez IntolerScan avec le compte concerné.</li>
+                <li>Allez dans <strong>Réglages</strong>.</li>
+                <li>Choisissez <strong>Supprimer mon compte</strong>.</li>
+                <li>Lisez l’avertissement, confirmez votre identité et validez la suppression.</li>
+            </ol>
+            <p>Cette voie déclenche le nettoyage des données IntolerScan attribuées au compte, puis la suppression de son authentification.</p>
+        </section>
+
+        <section class="card">
+            <h2>Sans accès à l’application</h2>
+            <p>Envoyez une demande depuis l’adresse e-mail du compte à :</p>
+            <p><a class="button" href="mailto:support@intolerscan.com?subject=Demande%20de%20suppression%20de%20compte%20IntolerScan">Demander la suppression par e-mail</a></p>
+            <p>Dans le message, indiquez uniquement <strong>l’adresse e-mail du compte IntolerScan à supprimer</strong>. Une vérification raisonnable de votre identité peut être nécessaire avant de traiter la demande.</p>
+            <p>Ne communiquez jamais votre mot de passe, un jeton d’accès, des photos, des informations médicales ou toute autre donnée non nécessaire.</p>
+            <p>Cette demande est traitée par le support ; elle n’est pas présentée comme un processus automatisé.</p>
+        </section>
+
+        <section class="card">
+            <h2>Données concernées</h2>
+            <p>La suppression couvre le compte Firebase et les données IntolerScan pouvant être attribuées à son identifiant, notamment le journal synchronisé, les suivis ciblés, les états de service et les photos privées Photo History. Le nettoyage local du compte est également effectué dans le parcours de l’application.</p>
+            <p>La suppression IntolerScan n’annule pas automatiquement un abonnement dans la boutique et ne supprime pas à distance le dossier client conservé par RevenueCat. Gérez séparément l’abonnement dans l’App Store ou Google Play.</p>
+            <p>Certains éléments peuvent être conservés uniquement lorsqu’une obligation légale applicable l’impose.</p>
+        </section>
+
+        <section class="card">
+            <h2>Besoin d’aide ?</h2>
+            <p>Contactez <a href="mailto:support@intolerscan.com">support@intolerscan.com</a> ou consultez le <a href="support.html">support IntolerScan</a>. La <a href="privacy-policy.html">Politique de confidentialité</a> décrit plus précisément les traitements de données.</p>
+        </section>
+    </main>
+
+    <footer>© 2026 IntolerScan. Tous droits réservés.</footer>
+</body>
+</html>
