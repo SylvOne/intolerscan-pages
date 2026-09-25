@@ -3,192 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support & Assistance - IntolerScan</title>
+    <meta name="description" content="Support et réponses pratiques pour l'application IntolerScan.">
+    <title>Support - IntolerScan</title>
     <style>
+        :root {
+            color-scheme: light;
+            --sage: #2c5f4d;
+            --sage-dark: #21483a;
+            --cream: #f7f3ec;
+            --paper: #ffffff;
+            --text: #252a28;
+            --muted: #606964;
+            --line: #d8e1dc;
+            --accent: #e9f3ee;
+        }
+        * { box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-            background-color: #f5f5f5;
+            margin: 0;
+            background: var(--cream);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.65;
         }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #4CAF50;
-            border-bottom: 3px solid #4CAF50;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #2E7D32;
-            margin-top: 30px;
-        }
-        .contact-box {
-            background: #e8f5e9;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #4CAF50;
-            margin: 20px 0;
-        }
-        .faq-item {
-            background: #f9f9f9;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 5px;
-            border-left: 3px solid #4CAF50;
-        }
-        .faq-question {
-            font-weight: bold;
-            color: #2E7D32;
-            margin-bottom: 10px;
-        }
-        a {
-            color: #4CAF50;
+        header, main, footer { width: min(880px, calc(100% - 32px)); margin-inline: auto; }
+        header { padding: 48px 0 24px; }
+        nav { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; }
+        nav a, .button {
+            border: 1px solid var(--sage);
+            border-radius: 999px;
+            color: var(--sage-dark);
+            padding: 8px 14px;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
+        nav a[aria-current="page"], .button { background: var(--sage); color: white; }
+        h1 { margin: 0 0 8px; color: var(--sage-dark); font-size: clamp(2rem, 6vw, 3rem); }
+        h2 { color: var(--sage-dark); margin-top: 0; }
+        .lead { color: var(--muted); font-size: 1.08rem; }
+        .card {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            margin-bottom: 18px;
+            padding: clamp(20px, 4vw, 32px);
         }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin: 10px 0;
-        }
+        .important { background: var(--accent); border-left: 5px solid var(--sage); }
+        .question { color: var(--sage-dark); font-weight: 700; margin-bottom: 4px; }
+        .answer { margin-top: 0; }
+        li + li { margin-top: 8px; }
+        a { color: var(--sage-dark); }
+        footer { color: var(--muted); padding: 14px 0 40px; text-align: center; }
+        :focus-visible { outline: 3px solid #b16f3b; outline-offset: 3px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Support & Assistance IntolerScan</h1>
-        <p>Bienvenue sur la page de support d'IntolerScan. Nous sommes là pour vous aider !</p>
+    <header>
+        <nav aria-label="Navigation principale">
+            <a href="privacy-policy.html">Confidentialité</a>
+            <a href="support.html" aria-current="page">Support</a>
+            <a href="account-deletion.html">Supprimer un compte</a>
+        </nav>
+        <h1>Support IntolerScan</h1>
+        <p class="lead">Aide sur le journal, le Scanner, les exports, l’abonnement et le compte.</p>
+    </header>
 
-        <div class="contact-box">
-            <h3>📧 Contactez-nous</h3>
-            <p><strong>Email :</strong> <a href="mailto:support@intolerscan.com">support@intolerscan.com</a></p>
-            <p><strong>Temps de réponse :</strong> Sous 48h (jours ouvrés)</p>
-            <p><strong>GitHub :</strong> <a href="https://github.com/SylvOne/intolerscan/issues" target="_blank">Signaler un bug</a></p>
-        </div>
+    <main>
+        <section class="card important">
+            <h2>Contact</h2>
+            <p>Écrivez à <a href="mailto:support@intolerscan.com">support@intolerscan.com</a>. Ne transmettez jamais votre mot de passe, un jeton d’accès ou des données personnelles qui ne sont pas nécessaires à votre demande.</p>
+            <p>Vous souhaitez effacer votre compte et ses données ? Consultez la page <a class="button" href="account-deletion.html">Supprimer mon compte</a>.</p>
+        </section>
 
-        <h2>❓ Questions Fréquentes (FAQ)</h2>
+        <section class="card">
+            <h2>Fonctions actuelles</h2>
+            <p>IntolerScan permet de consigner des repas et ingrédients, des crises et observations, le transit, ainsi que des médicaments ou compléments. La Timeline restitue ces entrées dans l’ordre chronologique.</p>
+            <p>Les vues descriptives peuvent compter et montrer les informations enregistrées. Elles ne fournissent ni diagnostic, ni conclusion causale, ni recommandation médicale.</p>
+        </section>
 
-        <div class="faq-item">
-            <div class="faq-question">Comment scanner un produit ?</div>
-            <p>Sur l'écran d'accueil, appuyez sur le bouton "Scanner un produit". Pointez votre appareil photo sur le code-barres du produit. L'application détectera automatiquement le code et affichera les informations.</p>
-        </div>
+        <section class="card">
+            <h2>Questions fréquentes</h2>
 
-        <div class="faq-item">
-            <div class="faq-question">Comment suivre mes symptômes ?</div>
-            <p>Après avoir scanné ou ajouté un repas, vous pouvez enregistrer vos symptômes dans la section "Ajouter un repas". Sélectionnez la date, l'heure et décrivez vos symptômes. L'application analysera les corrélations avec vos repas.</p>
-        </div>
+            <p class="question">Comment fonctionne le Scanner ?</p>
+            <p class="answer">Choisissez ou prenez une photo depuis le parcours Scanner. L’application recherche d’abord les codes-barres sur l’appareil, puis utilise le service Scanner pour proposer des ingrédients. Si nécessaire, Open Food Facts complète la recherche du produit. Relisez et validez toujours la proposition avant de l’enregistrer.</p>
 
-        <div class="faq-item">
-            <div class="faq-question">Quelle est la différence entre version gratuite et Premium ?</div>
-            <p><strong>Version gratuite :</strong></p>
+            <p class="question">À quoi servent la Carte du journal et le Suivi ciblé ?</p>
+            <p class="answer">La Carte du journal montre les liaisons factuelles présentes dans les données enregistrées. Le Suivi ciblé permet de choisir explicitement un ingrédient et de relire ses apparitions dans le temps. Ces outils restent descriptifs.</p>
+
+            <p class="question">Quels exports sont disponibles ?</p>
+            <p class="answer">La section Exporter propose un fichier Excel du journal et une Carte du journal interactive au format HTML. Les fichiers sont créés sur l’appareil, puis vous choisissez où les partager ou les enregistrer.</p>
+
+            <p class="question">Quels sont les quotas du compte gratuit ?</p>
+            <p class="answer">Un compte gratuit dispose de 10 entrées au total et de 3 exports au total, partagés entre Excel et Carte du journal HTML. Les droits Premium retirent ces limites. Il n’existe pas de restriction active de l’historique par ancienneté ; la Timeline et le mode sombre ne sont pas des options Premium dédiées.</p>
+
+            <p class="question">Comment gérer ou annuler Premium ?</p>
+            <p class="answer">Les achats sont gérés par la boutique utilisée sur votre appareil. Ouvrez les réglages d’abonnement de l’App Store ou de Google Play pour consulter, modifier ou annuler l’abonnement. L’accès reste soumis aux conditions et à la période de facturation de la boutique.</p>
+
+            <p class="question">Comment supprimer mon compte ?</p>
+            <p class="answer">Dans l’application, ouvrez <strong>Réglages → Supprimer mon compte</strong>. Si vous n’avez plus accès à l’application, utilisez la <a href="account-deletion.html">procédure externe de suppression</a>. La suppression confirmée est irréversible.</p>
+
+            <p class="question">Où sont conservées mes photos ?</p>
+            <p class="answer">Une photo utilisée par le Scanner est traitée pour produire une proposition. Elle n’est conservée dans Firebase Storage que lorsqu’elle est intégrée à Photo History selon le parcours et les droits du compte.</p>
+        </section>
+
+        <section class="card">
+            <h2>Signaler un problème</h2>
+            <p>Dans votre message, indiquez si possible :</p>
             <ul>
-                <li>30 scans par mois</li>
-                <li>1 export PDF par mois</li>
-                <li>Top 3 corrélations dans les analyses</li>
-                <li>Historique limité à 30 jours</li>
+                <li>le modèle de l’appareil et la version du système ;</li>
+                <li>la version d’IntolerScan ;</li>
+                <li>les étapes permettant de reproduire le problème ;</li>
+                <li>le message d’erreur affiché, sans donnée sensible.</li>
             </ul>
-            <p><strong>Version Premium :</strong></p>
-            <ul>
-                <li>Scans illimités</li>
-                <li>Exports PDF illimités</li>
-                <li>Top 5 corrélations + statistiques avancées</li>
-                <li>Historique complet sans limite</li>
-                <li>Analyses de délai entre repas et symptômes</li>
-                <li>Tendances temporelles</li>
-            </ul>
-        </div>
+            <p>Contact : <a href="mailto:support@intolerscan.com?subject=Support%20IntolerScan">support@intolerscan.com</a></p>
+        </section>
 
-        <div class="faq-item">
-            <div class="faq-question">Comment annuler mon abonnement Premium ?</div>
-            <p>Pour annuler votre abonnement :</p>
-            <ol>
-                <li>Ouvrez l'app <strong>Réglages</strong> sur votre iPhone/iPad</li>
-                <li>Appuyez sur votre nom en haut</li>
-                <li>Appuyez sur <strong>Abonnements</strong></li>
-                <li>Sélectionnez <strong>IntolerScan Premium</strong></li>
-                <li>Appuyez sur <strong>Annuler l'abonnement</strong></li>
-            </ol>
-            <p>Vous conserverez l'accès Premium jusqu'à la fin de votre période de facturation.</p>
-        </div>
+        <section class="card">
+            <h2>Confidentialité</h2>
+            <p>La <a href="privacy-policy.html">Politique de confidentialité</a> décrit les données traitées, les services utilisés et les moyens de gérer vos données.</p>
+        </section>
+    </main>
 
-        <div class="faq-item">
-            <div class="faq-question">Mes données sont-elles sécurisées ?</div>
-            <p>Oui ! Toutes vos données sont :</p>
-            <ul>
-                <li>Chiffrées en transit (HTTPS/TLS)</li>
-                <li>Stockées sur des serveurs sécurisés Firebase (Google)</li>
-                <li>Protégées par authentification</li>
-                <li>Conformes au RGPD</li>
-            </ul>
-            <p>Consultez notre <a href="privacy-policy.html">Politique de Confidentialité</a> pour plus de détails.</p>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">Comment exporter mes données ?</div>
-            <p>Vous pouvez exporter vos rapports en PDF depuis la section "Rapport". Cette fonctionnalité est limitée à 1 export/mois en version gratuite, illimitée en Premium.</p>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">Le scanner ne détecte pas mon produit</div>
-            <p>Si le code-barres n'est pas reconnu :</p>
-            <ul>
-                <li>Assurez-vous que le code-barres est bien visible et éclairé</li>
-                <li>Essayez de nettoyer l'objectif de votre caméra</li>
-                <li>Le produit peut ne pas être dans la base OpenFoodFacts - vous pouvez l'ajouter manuellement</li>
-            </ul>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">Comment supprimer mon compte ?</div>
-            <p>Pour supprimer votre compte et toutes vos données :</p>
-            <ol>
-                <li>Ouvrez l'application</li>
-                <li>Allez dans <strong>Paramètres</strong></li>
-                <li>Appuyez sur <strong>Supprimer mon compte</strong></li>
-                <li>Confirmez la suppression</li>
-            </ol>
-            <p>⚠️ Cette action est irréversible. Toutes vos données seront définitivement supprimées sous 30 jours.</p>
-        </div>
-
-        <h2>🐛 Signaler un Bug</h2>
-        <p>Vous avez trouvé un bug ? Aidez-nous à améliorer l'app !</p>
-        <ul>
-            <li>Email : <a href="mailto:support@intolerscan.com">support@intolerscan.com</a></li>
-            <li>GitHub Issues : <a href="https://github.com/SylvOne/intolerscan/issues" target="_blank">Créer un ticket</a></li>
-        </ul>
-        <p>Merci de préciser :</p>
-        <ul>
-            <li>Votre modèle d'iPhone/iPad</li>
-            <li>La version d'iOS</li>
-            <li>La version de l'app (visible dans Paramètres)</li>
-            <li>Les étapes pour reproduire le bug</li>
-        </ul>
-
-        <h2>💡 Demander une Fonctionnalité</h2>
-        <p>Vous avez une idée pour améliorer IntolerScan ? Nous sommes à l'écoute !</p>
-        <p>Envoyez-nous vos suggestions à <a href="mailto:support@intolerscan.com">support@intolerscan.com</a></p>
-
-        <h2>🔗 Liens Utiles</h2>
-        <ul>
-            <li><a href="privacy-policy.html">Politique de Confidentialité</a></li>
-            <li><a href="https://github.com/SylvOne/intolerscan" target="_blank">Code source (GitHub)</a></li>
-            <li><a href="https://world.openfoodfacts.org/" target="_blank">OpenFoodFacts - Base de données produits</a></li>
-        </ul>
-
-        <hr>
-        <p style="text-align: center; color: #666; font-size: 0.9em;">
-            © 2025 IntolerScan. Tous droits réservés.<br>
-            Fait avec ❤️ pour votre santé
-        </p>
-    </div>
+    <footer>© 2026 IntolerScan. Tous droits réservés.</footer>
 </body>
 </html>
