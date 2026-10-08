@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Brouillon de la politique de confidentialité Android V1 d’IntolerScan.">
+  <title>Brouillon Politique de confidentialité Android V1 — IntolerScan</title>
+  <!--
+  DRAFT — NOT FOR COMMERCIAL RELEASE
+  Document version: privacy-android-v1-draft
+  Prepared: 2026-10
+  Administrative placeholders remain.
+  -->
+  <style>
+    :root { color-scheme:light; --ink:#202825; --muted:#59645f; --paper:#fff; --bg:#f5f2ea; --green:#245a48; --line:#d7dfdb; --soft:#e8f2ed; --warn:#7c2d12; --warn-bg:#fff1e7; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    header, main, footer { width:min(960px,calc(100% - 32px)); margin-inline:auto; }
+    header { padding:40px 0 20px; }
+    h1,h2,h3 { color:var(--green); line-height:1.25; }
+    h1 { margin:.3rem 0; font-size:clamp(2rem,6vw,3.1rem); }
+    h2 { margin-top:0; }
+    .card { background:var(--paper); border:1px solid var(--line); border-radius:16px; margin:0 0 18px; padding:clamp(20px,4vw,32px); }
+    .principle { background:var(--soft); border-left:5px solid var(--green); }
+    .draft,.placeholder { background:var(--warn-bg); border-left:5px solid var(--warn); }
+    .placeholder { color:var(--warn); font-weight:650; padding:12px 16px; }
+    .meta, caption { color:var(--muted); }
+    .table-wrap { overflow-x:auto; }
+    table { border-collapse:collapse; width:100%; min-width:720px; }
+    th,td { border:1px solid var(--line); padding:10px; text-align:left; vertical-align:top; }
+    th { background:var(--soft); color:var(--green); }
+    a { color:var(--green); }
+    li + li { margin-top:.45rem; }
+    footer { color:var(--muted); padding:8px 0 40px; text-align:center; }
+    :focus-visible { outline:3px solid #b55d1d; outline-offset:3px; }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="meta">Document versionné — Android V1</p>
+    <h1>Politique de confidentialité</h1>
+    <p class="meta">Version : privacy-android-v1-draft — Préparée en octobre 2026</p>
+  </header>
+
+  <main>
+    <section class="card draft">
+      <h2>Brouillon — ne pas utiliser pour une commercialisation</h2>
+      <p>Cette politique décrit l’architecture Android V1 connue à la date de préparation. Elle ne doit pas être publiée comme document final tant que les informations administratives, les bases légales, les durées non arrêtées, les contrats fournisseurs et le mécanisme de consentement santé n’ont pas été validés.</p>
+      <p class="placeholder">[À FINALISER AVANT RELEASE : mécanisme d’accord explicite santé dans l’application]</p>
+      <p class="placeholder">[À VALIDER JURIDIQUEMENT AVANT RELEASE : base légale de chaque finalité, qualification des rôles des prestataires, transferts éventuels et nécessité d’une AIPD]</p>
+    </section>
+
+    <section class="card principle">
+      <h2>Le principe d’IntolerScan</h2>
+      <p>IntolerScan est un journal personnel descriptif. L’application compte, classe et restitue les informations saisies, mais ne fournit ni diagnostic, ni conclusion causale, ni recommandation médicale. La Carte du journal ne prouve pas qu’un aliment a causé une observation.</p>
+    </section>
+
+    <section class="card">
+      <h2>1. Responsable du traitement</h2>
+      <ul>
+        <li><strong>Responsable :</strong> [NOM ET PRÉNOM DE L’ENTREPRENEUR INDIVIDUEL À CONFIRMER] ;</li>
+        <li><strong>Statut :</strong> entrepreneur individuel / micro-entrepreneur [À CONFIRMER] ;</li>
+        <li><strong>Adresse :</strong> [ADRESSE PROFESSIONNELLE À COMPLÉTER AVANT RELEASE] ;</li>
+        <li><strong>Contact données personnelles :</strong> [ADRESSE E-MAIL DÉDIÉE À CONFIRMER AVANT RELEASE] ;</li>
+        <li><strong>Support actuellement publié :</strong> <a href="mailto:support@intolerscan.com">support@intolerscan.com</a>.</li>
+      </ul>
+      <p class="placeholder">[À COMPLÉTER AVANT RELEASE : identité et coordonnées définitives du responsable de traitement]</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Personnes concernées et âge</h2>
+      <p>La V1 commerciale Android est destinée aux utilisateurs âgés de 18 ans ou plus. Elle n’est pas conçue pour collecter les données de mineurs. L’utilisateur ne doit pas créer un journal concernant un tiers sans base valable et information appropriée de cette personne.</p>
+    </section>
+
+    <section class="card">
+      <h2>3. Catégories de données traitées</h2>
+      <h3>3.1 Compte et authentification</h3>
+      <ul>
+        <li>adresse e-mail et identifiant utilisateur Firebase ;</li>
+        <li>données techniques d’authentification, dates de création/connexion et informations nécessaires à la sécurité de session ;</li>
+        <li>preuve des versions de documents acceptées, horodatages et choix de consentement lorsque le futur onboarding légal sera activé.</li>
+      </ul>
+
+      <h3>3.2 Journal personnel</h3>
+      <ul>
+        <li>repas, ingrédients, produits, dates, heures, notes et niveaux de stress déclarés ;</li>
+        <li>crises et descriptions de symptômes, intensité, transit et type Bristol ;</li>
+        <li>médicaments ou compléments renseignés volontairement ;</li>
+        <li>paramètres et résultats factuels du Suivi ciblé ;</li>
+        <li>données nécessaires aux exports Excel et Carte du journal HTML.</li>
+      </ul>
+      <p>Ces éléments peuvent révéler directement ou indirectement des <strong>données concernant la santé</strong>, qui constituent une catégorie particulière de données personnelles.</p>
+      <p class="placeholder">[À FINALISER AVANT RELEASE : mécanisme d’accord explicite santé dans l’application]</p>
+
+      <h3>3.3 Scanner, code-barres et Photo History</h3>
+      <ul>
+        <li>photographie choisie pour analyse, résultat proposé, ingrédients extraits et langue de la requête ;</li>
+        <li>code-barres et informations produit récupérées auprès d’Open Food Facts ;</li>
+        <li>si un repas scanné est sauvegardé avec un droit Premium donnant accès à Photo History, image conservée automatiquement lorsque l’opération technique réussit ;</li>
+        <li>métadonnées techniques de traitement, d’upload et de suppression nécessaires à la cohérence du service.</li>
+      </ul>
+
+      <h3>3.4 Abonnement, quotas et droits</h3>
+      <ul>
+        <li>état Free/Premium, source et échéance du droit ;</li>
+        <li>identifiants techniques nécessaires à la correspondance entre le compte Firebase et RevenueCat ;</li>
+        <li>opérations de quota, soldes, identifiants d’opération idempotents et éléments de synchronisation ;</li>
+        <li>informations d’achat et d’abonnement transmises par Google Play ou RevenueCat, sans traitement direct du numéro complet de carte bancaire par IntolerScan.</li>
+      </ul>
+
+      <h3>3.5 Sécurité, fonctionnement et support</h3>
+      <ul>
+        <li>jetons et signaux d’attestation App Check, informations techniques de l’appareil, de l’application et du réseau nécessaires à la sécurité ;</li>
+        <li>journaux techniques limités, erreurs, états de reprise, contrôles anti-abus et configuration distante ;</li>
+        <li>contenu des messages adressés au support et pièces volontairement jointes.</li>
+      </ul>
+      <p><strong>Firebase Analytics n’est pas intégré à la V1.</strong> IntolerScan ne remplace pas ce SDK par un autre outil de suivi comportemental.</p>
+    </section>
+
+    <section class="card">
+      <h2>4. Finalités</h2>
+      <ul>
+        <li><strong>Fournir le compte :</strong> inscription, connexion et gestion de la session ;</li>
+        <li><strong>Fournir le journal :</strong> enregistrer et restituer les entrées, la Chronologie et les vues descriptives ;</li>
+        <li><strong>Synchroniser :</strong> retrouver sur le compte les données et états applicatifs attendus entre les sessions et appareils compatibles ;</li>
+        <li><strong>Exécuter le Scanner :</strong> traiter l’image demandée, proposer des ingrédients et rechercher un code-barres ou un produit ;</li>
+        <li><strong>Fournir le Suivi ciblé :</strong> afficher, sur une période choisie, les événements factuels associés à l’ingrédient sélectionné ;</li>
+        <li><strong>Fournir Photo History :</strong> conserver et restituer les images des repas scannés enregistrés lorsque le droit Premium le permet ;</li>
+        <li><strong>Gérer l’offre :</strong> quotas Free, droits Premium, achats et restauration ;</li>
+        <li><strong>Sécuriser le service :</strong> authentification, App Check, règles d’accès, prévention des abus et reprise après incident ;</li>
+        <li><strong>Assurer le support :</strong> répondre aux demandes, diagnostiquer une anomalie et protéger le compte ;</li>
+        <li><strong>Supprimer le compte :</strong> authentifier la demande, effacer les données applicatives couvertes et permettre la reprise sûre du processus en cas d’interruption ;</li>
+        <li><strong>Respecter les obligations légales :</strong> preuve, comptabilité, gestion des droits et litiges dans la mesure applicable.</li>
+      </ul>
+      <p>Les données du journal ne sont pas utilisées pour tirer une conclusion médicale ou présenter une relation causale entre un aliment et une observation.</p>
+    </section>
+
+    <section class="card">
+      <h2>5. Bases légales — matrice à finaliser</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>Projet de matrice : aucune ligne ne doit être considérée comme définitivement qualifiée avant validation.</caption>
+          <thead><tr><th>Finalité</th><th>Article 6 RGPD envisagé</th><th>Article 9 RGPD si données de santé</th><th>État</th></tr></thead>
+          <tbody>
+            <tr><td>Compte et fourniture des fonctions demandées</td><td>Art. 6(1)(b), exécution du contrat, à confirmer</td><td>Art. 9(2)(a), consentement explicite, envisagé pour les données potentiellement de santé</td><td>À valider</td></tr>
+            <tr><td>Scanner, journal, Suivi ciblé, Photo History</td><td>Art. 6(1)(b) et/ou 6(1)(a), qualification à arrêter</td><td>Art. 9(2)(a), consentement explicite envisagé</td><td>À valider</td></tr>
+            <tr><td>Facturation et obligations légales</td><td>Art. 6(1)(c), obligation légale, selon les données concernées</td><td>Sans objet en principe ; vérifier la minimisation</td><td>À valider</td></tr>
+            <tr><td>Sécurité et prévention des abus</td><td>Art. 6(1)(f), intérêt légitime, avec mise en balance</td><td>Éviter les données de santé ; exception à qualifier si nécessaire</td><td>À valider</td></tr>
+            <tr><td>Support</td><td>Art. 6(1)(b), 6(1)(a) ou 6(1)(f) selon la demande</td><td>Condition de l’article 9 à déterminer selon la nature des données reçues et le traitement réellement nécessaire</td><td>À valider</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>La prise de connaissance de la Politique de confidentialité, l’acceptation des CGUV et le consentement explicite au traitement des données potentiellement de santé sont des actes distincts. Le futur écran d’onboarding devra permettre un choix libre, spécifique, éclairé, univoque, traçable et retirable.</p>
+      <p class="placeholder">[À VALIDER JURIDIQUEMENT AVANT RELEASE : matrice complète articles 6 et 9 RGPD, modalités et effets du retrait du consentement santé]</p>
+    </section>
+
+    <section class="card">
+      <h2>6. Destinataires et prestataires</h2>
+      <p>Dans la limite nécessaire aux finalités, les données peuvent être traitées par :</p>
+      <ul>
+        <li><strong>Google Firebase :</strong> Authentication, Firestore, Cloud Functions, Cloud Storage, App Check et Remote Config ;</li>
+        <li><strong>Google Gemini :</strong> analyse demandée d’une image ou traitement associé au Scanner via le backend ;</li>
+        <li><strong>Open Food Facts :</strong> recherche de produits/codes-barres et données produit ;</li>
+        <li><strong>RevenueCat :</strong> gestion et synchronisation des droits Premium ;</li>
+        <li><strong>Google Play :</strong> distribution, achat, facturation, renouvellement, annulation et restauration de l’abonnement Android ;</li>
+        <li><strong>prestataires de support ou conseils habilités :</strong> seulement lorsque nécessaire et sous garanties appropriées.</li>
+      </ul>
+      <p>Les données ne sont pas vendues. Le caractère sous-traitant, responsable distinct ou destinataire de chaque acteur doit être confirmé selon ses contrats et l’usage final.</p>
+      <p class="placeholder">[À FINALISER AVANT RELEASE : liste contractuelle des prestataires, rôles RGPD, clauses de sous-traitance et garanties de transfert]</p>
+    </section>
+
+    <section class="card">
+      <h2>7. Localisation et transferts</h2>
+      <ul>
+        <li>les principales Cloud Functions IntolerScan sont configurées en <strong>europe-west1</strong> ;</li>
+        <li>la base Firestore de production est située en multi-région européenne <strong>eur3</strong> ;</li>
+        <li>le bucket Cloud Storage principal est situé en <strong>EUROPE-WEST1</strong> ;</li>
+        <li>d’autres fournisseurs, notamment Google Gemini, Open Food Facts, RevenueCat et Google Play, peuvent utiliser une infrastructure située dans plusieurs pays selon leurs services et contrats.</li>
+      </ul>
+      <p>Il serait inexact d’affirmer que tous les traitements sont exclusivement exécutés dans une seule région. Les transferts éventuels hors Espace économique européen doivent être documentés et encadrés par les mécanismes applicables.</p>
+      <p class="placeholder">[À VALIDER AVANT RELEASE : régions effectives de chaque service, décisions d’adéquation, clauses contractuelles types et mesures supplémentaires]</p>
+    </section>
+
+    <section class="card">
+      <h2>8. Durées de conservation</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Donnée</th><th>Durée ou règle connue</th><th>État</th></tr></thead>
+          <tbody>
+            <tr><td>Cache serveur Scanner/Gemini</td><td>30 jours maximum dans le mécanisme actuel</td><td>Démontré par le code</td></tr>
+            <tr><td>Cache Open Food Facts positif</td><td>Environ 90 jours</td><td>Démontré par le code</td></tr>
+            <tr><td>Cache Open Food Facts négatif</td><td>Environ 24 heures</td><td>Démontré par le code</td></tr>
+            <tr><td>Photo History après perte du Premium</td><td>Période de grâce technique de 30 jours avant purge, sous réserve des états de reprise</td><td>Démontré par le code</td></tr>
+            <tr><td>Journal, compte et préférences</td><td>Jusqu’à suppression par l’utilisateur ou suppression du compte, sous réserve des obligations et délais techniques applicables</td><td>Durée détaillée à arrêter</td></tr>
+            <tr><td>Quotas, entitlements et preuves d’opérations</td><td>Durée nécessaire à la fourniture, à l’idempotence, à la sécurité et à la preuve</td><td>À définir</td></tr>
+            <tr><td>Journaux techniques et sécurité</td><td>Durée courte et proportionnée au diagnostic et à la sécurité</td><td>À définir par catégorie</td></tr>
+            <tr><td>Support</td><td>Durée nécessaire au traitement puis archivage éventuel selon les obligations ou litiges</td><td>À définir</td></tr>
+            <tr><td>Preuves de consentement et de version</td><td>Durée nécessaire pour démontrer la conformité, sans conservation excessive</td><td>À définir</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Une durée doit être définie et justifiée pour chaque catégorie avant la mise en production commerciale. Une donnée ne doit pas être conservée indéfiniment par défaut.</p>
+      <p class="placeholder">[À FINALISER AVANT RELEASE : registre complet des durées, archivage intermédiaire, purge et justification de chaque durée]</p>
+    </section>
+
+    <section class="card">
+      <h2>9. Stockage local, sécurité et exactitude</h2>
+      <p>L’application conserve localement certaines données et caches nécessaires à l’affichage, à la reprise hors ligne et au fonctionnement. Les données synchronisées sont protégées par l’authentification, App Check, des règles d’accès et des fonctions serveur. Aucun dispositif ne garantit cependant un risque nul.</p>
+      <p>L’utilisateur protège son appareil et son compte, maintient l’application à jour et vérifie les propositions automatiques du Scanner ou d’Open Food Facts. Les informations produit de tiers peuvent évoluer ou contenir des erreurs.</p>
+      <p class="placeholder">[À VALIDER AVANT RELEASE : analyse de risques, AIPD le cas échéant, politique de journalisation et documentation des mesures techniques et organisationnelles]</p>
+    </section>
+
+    <section class="card">
+      <h2>10. Suppression du compte</h2>
+      <p>Le flux de suppression intégré supprime le compte Firebase et les données applicatives rattachées au compte dans Firestore, Cloud Storage et le stockage local selon le contrat technique actuel.</p>
+      <p>Cette suppression n’annule pas l’abonnement Google Play. Elle ne signifie pas nécessairement que les données détenues séparément par Google Play ou RevenueCat, les journaux techniques soumis à une durée propre, les obligations légales ou les échanges de support sont effacés au même instant. Les demandes adressées à ces acteurs relèvent aussi de leurs propres politiques.</p>
+      <p>Informations pratiques : <a href="../../account-deletion.html">suppression du compte IntolerScan</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>11. Vos droits</h2>
+      <p>Selon les conditions prévues par le RGPD et la loi applicable, la personne concernée peut demander :</p>
+      <ul>
+        <li>l’accès à ses données ;</li>
+        <li>leur rectification ;</li>
+        <li>leur effacement ;</li>
+        <li>la limitation d’un traitement ;</li>
+        <li>la portabilité des données lorsque ce droit s’applique ;</li>
+        <li>l’opposition à un traitement fondé sur l’intérêt légitime ;</li>
+        <li>le retrait du consentement à tout moment, sans remettre en cause la licéité antérieure au retrait.</li>
+      </ul>
+      <p>La demande peut être envoyée à [CONTACT DONNÉES PERSONNELLES À CONFIRMER] ou, provisoirement, à <a href="mailto:support@intolerscan.com">support@intolerscan.com</a>. Une vérification proportionnée de l’identité peut être demandée pour protéger le compte.</p>
+      <p>La personne peut également introduire une réclamation auprès de la <a href="https://www.cnil.fr/" rel="external">CNIL</a> ou de l’autorité de contrôle compétente.</p>
+    </section>
+
+    <section class="card">
+      <h2>12. Retrait du consentement santé</h2>
+      <p>Le futur mécanisme devra permettre de retirer l’accord explicite relatif au traitement des données potentiellement de santé. Les conséquences pratiques du retrait sur l’accès au journal, la conservation résiduelle et la suppression doivent être expliquées avant le choix et implémentées de façon cohérente.</p>
+      <p class="placeholder">[À FINALISER AVANT RELEASE : parcours de retrait, effet sur les fonctions, suppression/export préalable et conservation légale éventuelle]</p>
+    </section>
+
+    <section class="card">
+      <h2>13. Modifications et versions</h2>
+      <p>Chaque version publiée devra comporter un identifiant et une date. Une modification substantielle sera portée à la connaissance de l’utilisateur et donnera lieu à une nouvelle acceptation ou à un nouveau consentement lorsque la loi l’exige.</p>
+      <p>Ce fichier porte uniquement l’identifiant <strong>privacy-android-v1-draft</strong>. Il ne constitue pas la politique commerciale finale.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>IntolerScan — Brouillon de politique de confidentialité Android V1 — Non destiné à la commercialisation.</p>
+  </footer>
+</body>
+</html>
