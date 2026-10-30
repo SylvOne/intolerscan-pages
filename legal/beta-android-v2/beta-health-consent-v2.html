@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Consentement santé de la bêta Android V1 d’IntolerScan.">
+  <title>Consentement santé BETA V1 — IntolerScan</title>
+  <!--
+  Document version: beta-health-consent-v2
+  Prepared: 2026-10
+  -->
+  <style>
+    :root { color-scheme:light; --ink:#202825; --muted:#59645f; --paper:#fff; --bg:#f5f2ea; --green:#245a48; --line:#d7dfdb; --soft:#e8f2ed; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    header,main,footer { width:min(820px,calc(100% - 32px)); margin-inline:auto; }
+    header { padding:40px 0 20px; }
+    h1,h2 { color:var(--green); line-height:1.25; }
+    h1 { margin:.3rem 0; font-size:clamp(2rem,6vw,3rem); }
+    h2 { margin-top:0; }
+    .card { background:var(--paper); border:1px solid var(--line); border-radius:16px; margin:0 0 18px; padding:clamp(20px,4vw,32px); }
+    .exact { background:var(--soft); border-left:5px solid var(--green); font-size:1.12rem; font-weight:650; }
+    .meta { color:var(--muted); }
+    a { color:var(--green); }
+    li + li { margin-top:.45rem; }
+    footer { color:var(--muted); padding:8px 0 40px; text-align:center; }
+    :focus-visible { outline:3px solid #b55d1d; outline-offset:3px; }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="meta">Texte versionné — Bêta Android V1</p>
+    <h1>Consentement au traitement des données pouvant révéler la santé</h1>
+    <p class="meta">Version : beta-health-consent-v2 — Préparée en octobre 2026</p>
+  </header>
+
+  <main>
+    <section class="card exact" aria-labelledby="exact-text-title">
+      <h2 id="exact-text-title">Texte exact du consentement</h2>
+      <p>J’accepte que les informations que je choisis d’enregistrer dans IntolerScan et qui peuvent révéler des informations relatives à ma santé soient traitées pour me fournir les fonctions du journal, de synchronisation et d’affichage descriptif que je demande.</p>
+    </section>
+
+    <section class="card">
+      <h2>1. Informations concernées</h2>
+      <p>Selon ce que vous choisissez d’enregistrer, ces informations peuvent notamment comprendre :</p>
+      <ul>
+        <li>repas, ingrédients, notes et données alimentaires rapprochées du reste du journal ;</li>
+        <li>ressentis, symptômes, observations et niveau de stress ;</li>
+        <li>transit et type Bristol ;</li>
+        <li>médicaments ou compléments ;</li>
+        <li>paramètres, expositions et événements affichés dans le Suivi ciblé ;</li>
+        <li>photographies utilisées par le Scanner et, lorsque le droit de test le permet, conservées dans Photo History.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>2. Finalités</h2>
+      <p>Ces informations sont utilisées pour fournir le journal personnel, sa synchronisation entre le stockage local et les services IntolerScan, la Chronologie, les affichages descriptifs, le Scanner avec revue humaine, Photo History et le Suivi ciblé.</p>
+      <p>IntolerScan ne fournit ni diagnostic, ni prévention médicale revendiquée, ni prescription, ni conseil thérapeutique, ni télésurveillance, ni suivi de patient. Il ne constitue pas un dossier patient et ne prend aucune décision médicale automatisée.</p>
+    </section>
+
+    <section class="card">
+      <h2>3. Un choix distinct</h2>
+      <p>Ce consentement n’est pas pré-coché et ne peut pas être déduit du silence. Il est distinct :</p>
+      <ul>
+        <li>de l’acceptation des <a href="beta-terms-v2.html">conditions de participation à la bêta</a> ;</li>
+        <li>de la prise de connaissance de la <a href="beta-privacy-v2.html">Politique de confidentialité BETA V1</a> ;</li>
+        <li>de la déclaration confirmant que vous avez 18 ans ou plus.</li>
+      </ul>
+      <p><strong>Sans ce consentement explicite, le compte bêta n’est pas créé et aucune donnée de journal n’est collectée.</strong></p>
+    </section>
+
+    <section class="card">
+      <h2>4. Retrait du consentement</h2>
+      <p>Vous pouvez retirer ce consentement depuis les réglages aussi simplement que vous l’avez donné. Le retrait ne remet pas en cause la licéité du traitement effectué avant ce retrait.</p>
+      <p>Après confirmation, IntolerScan bloque immédiatement les nouvelles opérations métier concernées, arrête les nouvelles synchronisations et nouveaux uploads correspondants, et enregistre au serveur un événement de retrait sans modifier l’historique de l’acceptation.</p>
+      <p>Après confirmation serveur, les données métier dépendantes sont purgées localement et à distance. Le compte n’est pas automatiquement supprimé : il devient limité.</p>
+      <p>Lorsque la purge est terminée, votre compte reste limité dans cette version de la bêta : vous ne pouvez pas y enregistrer un nouveau consentement ni recommencer le journal. Les données supprimées ne sont pas restaurées et les quotas ou mécanismes anti-abus conservés ne sont pas réinitialisés artificiellement. Vous pouvez supprimer séparément votre compte.</p>
+      <p>Un export facultatif peut être proposé avant le retrait. Son échec, son annulation ou son indisponibilité ne bloque ni ne retarde le retrait.</p>
+    </section>
+
+    <section class="card">
+      <h2>5. Version</h2>
+      <p>Ce document porte l’identifiant <strong>beta-health-consent-v2</strong>. Le recueil doit conserver l’action positive, l’horodatage serveur et la version exacte du consentement dans un historique append-only.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>IntolerScan — Consentement santé BETA V1 — Version beta-health-consent-v2.</p>
+  </footer>
+</body>
+</html>
